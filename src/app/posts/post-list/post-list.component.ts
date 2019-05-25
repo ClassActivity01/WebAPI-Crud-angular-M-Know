@@ -11,7 +11,7 @@ export class PostListComponent implements OnInit {
   constructor(private service : PostUpdateService) { }
 
   ngOnInit() { 
-    this.service.refreshList; //calling refreshList function from PostUpdate service 
+    this.service.refreshList;   //calling refreshList function from PostUpdate service 
 
   }
 
