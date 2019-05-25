@@ -1,3 +1,8 @@
-<p>
-  post-list works!
-</p>
+<h2>Running Posts</h2>
+<table class="table table-hover">
+  <tr *ngFor="let post of service.list"> <!--Iterate through list property from service class -->
+    <td (click)="populateForm(post)">[{{post.Post_Update_ID}}]-{{post.About_Malaria_ID}}</td>
+    <td (click)="populateForm(post)">{{post.Post_Description}}</td>
+    <td><button (click)="onDelete(post.Post_Update_ID)" class="btn btn-sm btn-outline-danger"></button></td>
+  </tr>
+</table> 
